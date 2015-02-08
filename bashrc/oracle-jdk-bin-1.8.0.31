@@ -1,0 +1,7 @@
+# Exclude bundled libraries from provides
+PROVIDES_EXCLUDE="*"
+
+# /opt/oracle-jdk-bin-1.8.0.31/jre/lib/amd64/libavplugin.so requires libavcodec.so.53 libavformat.so.53
+# /opt/oracle-jdk-bin-1.8.0.31/jre/lib/amd64/libgstreamer-lite.so is missing DT_SONAME
+REQUIRES_EXCLUDE="libavcodec.so.53 libavformat.so.53
+	libgstreamer-lite.so"

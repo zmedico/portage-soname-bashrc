@@ -1,0 +1,5 @@
+# exclude bundled libraries
+PROVIDES_EXCLUDE="*"
+
+# It still runs even if we only have libudev.so.1
+REQUIRES_EXCLUDE="libudev.so.0"

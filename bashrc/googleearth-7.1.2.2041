@@ -1,0 +1,16 @@
+# Exclude bundled libraries from provides
+PROVIDES_EXCLUDE="*"
+
+# bundled libraries missing DT_SONAME
+REQUIRES_EXCLUDE="
+libaction.so libalchemyext.so libapiloader.so libauth.so
+libbase.so libcommon_gui.so libcommon_platform.so libcommon.so
+libcommon_webbrowser.so libcomponentframework.so libfilmstrip.so
+libfusioncommon.so libgdata.so libge_cache.so libge_chrome_net.so
+libge_net.so libgeobase.so libgeobaseutils.so libglobalnew.so
+libgoogleapi.so libgoogleearth_free.so libIGAttrs.so libIGCore.so
+libIGExportCommon.so libIGGfx.so libIGMath.so libIGOpt.so
+libIGSg.so libIGUtils.so liblayer.so libmaps.so libmath.so
+libmoduleframework.so libnavigate.so libport.so libprintmodule.so
+libprofile.so librender.so libreporting.so libsearch.so libsgutil.so
+libspatial.so libwebbrowser.so libwmsbase.so libxsltransform.so"

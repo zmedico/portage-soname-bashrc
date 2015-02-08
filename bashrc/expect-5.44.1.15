@@ -1,0 +1,2 @@
+# /usr/lib64/expect5.44.1.15/libexpect5.44.1.15.so is missing DT_SONAME
+REQUIRES_EXCLUDE="libexpect5.44.1.15.so"

@@ -1,0 +1,17 @@
+# Exclude bundled libraries from provides
+PROVIDES_EXCLUDE="*"
+
+# app-text/acroread-9.5.5-r2 has shared objects lacking DT_SONAME,
+# with symlinks used to resolve the sonames.
+# /opt/Adobe/Reader9/Reader/intellinux/lib/libadobelinguistic.so -> libadobelinguistic.so.3.2.0
+# /opt/Adobe/Reader9/Reader/intellinux/lib/libAGM.so -> libAGM.so.4.18
+# /opt/Adobe/Reader9/Reader/intellinux/lib/libResAccess.so -> libResAccess.so.0.1
+# /opt/Adobe/Reader9/Reader/intellinux/lib/libACE.so -> libACE.so.2.13
+# /opt/Adobe/Reader9/Reader/intellinux/lib/libWRServices.so -> libWRServices.so.3.1
+# /opt/Adobe/Reader9/Reader/intellinux/lib/libBIBUtils.so -> libBIBUtils.so.1.1
+# /opt/Adobe/Reader9/Reader/intellinux/lib/libBIB.so -> libBIB.so.1.2
+# /opt/Adobe/Reader9/Reader/intellinux/lib/libCoolType.so -> libCoolType.so.5.05
+REQUIRES_EXCLUDE="libadobelinguistic.so libAdobeXMP.so libACE.so
+	libAGM.so libAXE8SharedExpat.so libAXSLE.so libeggtrayicon.so
+	libextendscript.so libJP2K.so libWRServices.so libBIBUtils.so
+	libBIB.so libCoolType.so libResAccess.so libsccore.so"
